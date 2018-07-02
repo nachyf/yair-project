@@ -1,0 +1,70 @@
+ 
+ img{
+
+   margin-left: 30px;
+   margin-right: 30px;
+   margin-top: 30px;
+   width: 82%;
+ }
+
+ .caption{
+   position: relative;
+ }
+ h4{
+
+   font-size: 20px;
+   margin-bottom: 30px;
+   margin-right: 20px;
+   
+
+ 
+ color: #07c;
+    font-weight: bold;
+    
+ }
+ p{
+ color:darkcyan;
+    font-weight: bold;
+    position: absolute;
+     bottom: 10px;
+    right: 300px;
+
+ }
+ 
+  /* #div1{
+  
+    border: 1px solid black;
+     height:240px ;
+   width: 900px; 
+   margin-top: 10px;
+   
+    position: relative;
+} 
+#div1
+{
+    background-repeat: no-repeat;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Hotel-room-renaissance-columbus-ohio.jpg/250px-Hotel-room-renaissance-columbus-ohio.jpg") ;
+    background-position:97%;
+    background-size: 250px;
+  
+
+}
+div a{
+
+  font-size: 20px;
+   top: 30px;
+    right: 340px;
+ 
+ position: absolute;
+ color: #07c;
+    font-weight: bold;
+    
+  
+}
+span {
+    color:darkcyan;
+    font-weight: bold;
+    position: absolute;
+     bottom: 30px;
+    right: 800px;
+} */

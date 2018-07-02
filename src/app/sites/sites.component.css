@@ -1,0 +1,18 @@
+/* body{
+  direction:rtl
+} */
+p{
+  /* margin: 30px 10px 40px 650px; */
+    font-size: 18px;
+}h3{
+   margin-right: 20px;
+    text-decoration: underline;
+}
+img{
+   width: 300px;
+    height: 200px;
+     margin-right: 20px;
+}a {
+  margin-right: 15px;
+   font-size: 16px;
+}

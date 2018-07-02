@@ -1,0 +1,109 @@
+  .add{
+    
+    
+    position: absolute;
+    bottom: 16px;
+    left: 50px;
+  
+  }
+  
+  
+   #well{
+  color: #07c;
+  position: relative;
+  
+  margin-left: 30px;
+} 
+ #well1:hover {
+   box-shadow: 0 0 3px #000000;
+}
+ 
+ #id3{
+
+margin: 50px;
+   
+}
+
+#id{
+ 
+   /* border: 1px ; */
+   /* padding: 50px; */
+   /* height:350px;
+   width: 250px;  */
+   /* margin-left: 82px; */
+   
+}
+#id button{
+
+   margin-left: 237px;
+}
+
+#id1{
+  overflow-x: hidden;
+    overflow-y: scroll;
+  background-color: Azure;
+   border: 1px solid #ddd;
+      height:390px;
+   width: 290px; 
+    /* margin-left: 30px; */
+    text-align: center;
+    
+}
+
+table {
+
+  
+  direction: rtl;
+/* width: 95%; */
+  border: 1px solid #ddd;
+  font-size: 18px;
+    /* margin-top: 10px; */
+    margin-bottom: 40px;
+   /* margin-right: 30px;
+    margin-left: 440px;
+   */
+}
+
+ th,td {
+  text-align: right;
+  padding: 12px;
+  list-style-type: none;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+th{
+    background-color: #f1f1f1;
+
+}
+
+
+/* 
+div.box{
+position: relative;
+  
+  margin-right: 25px
+}
+div.pz {
+position: absolute;
+  margin-right: 20px;
+  top: 57px;
+}
+ div.ps{
+
+  position: absolute;
+  margin-right: 20px;
+  top: 79px;
+}
+div.all{
+
+   position: absolute;
+  margin-right: 20px;
+  top: 101px;
+} */
+  
+ 
+
+  
+  

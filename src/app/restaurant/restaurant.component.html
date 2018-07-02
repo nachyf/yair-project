@@ -1,0 +1,88 @@
+<div class="container" >
+  
+
+ 
+
+  <div class="row" id="id3" >
+    <div  class="col-sm-7" ></div>
+     
+        <div  class="col-sm-5" >
+<div class="input-group" >
+      <input type="text" class="form-control" placeholder="חפש שם מסעדה.."  [(ngModel)]="query"  >
+      <div class="input-group-btn" >
+        <button class="btn btn-info"  ><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    
+    </div> 
+  </div>
+  </div>
+
+
+<div class="row"> 
+
+ <div id="id" class="col-sm-3" >
+
+   <div id="id1" *ngIf="showSelected">
+   <button type="button" class="btn btn-default btn-sm" (click)="HideButton()">
+          <span class="glyphicon glyphicon-remove"></span> 
+        </button>
+
+   <router-outlet rest="selectRest" ></router-outlet>
+   </div>
+   </div>
+
+
+<div class="col-sm-7">
+  <!-- <table border="1"   [ngStyle]="{'font-size.px':fontSize}">
+        <tr>
+            
+            <th>שם</th>
+            <th >סוג</th>
+            <th>כתובת</th>
+          
+            
+        </tr>
+        <tr *ngFor="let r of restaurants |  filter: query | filter1:Type" >
+
+        
+            <td [routerLink]="['app-restaurant-details', r.restID]" (click)="ShowButton()" ><a>{{r.restName}} </a></td>
+           
+            
+            <td  >{{r.restType }}</td>
+            <td >{{r.restAddres}}</td>
+          
+            
+           
+          
+ 
+        </tr>
+    </table> -->
+    <div id="well" *ngFor="let r of restaurants |  filter: query | filter1:Type" >
+   <!-- <a> <div class="well well-lg" [routerLink]="['app-restaurant-details', r.restID]" (click)="ShowButton()"><h3>{{r.restName}} </h3>  <h3> {{r.restType }} </h3> <h3 class="add">  {{r.restAddres}}</h3></div></a> -->
+
+   <div id="well1" class="panel panel-info" [routerLink]="['app-restaurant-details', r.restID]" (click)="ShowButton()"> 
+     <div class="panel-heading"><h3>{{r.restName}}</h3>
+     </div>
+  <div class="panel-body">
+   <h4 class="none1"> {{r.restType }}    </h4>      <h4 class="add">       <span class="glyphicon glyphicon-map-marker"></span>       {{r.restAddres}}</h4>
+  </div></div>
+</div>
+</div>
+
+  
+
+    <div class="box" class="col-sm-2">
+
+<h4>מיין לפי סוג מסעדה:</h4><br>
+<input type="checkbox"  [(ngModel)]="Type" (click)="checkType()"/> פיצה <br>
+<input type="checkbox"   (click)="checkType1()"/> דגים<br>
+<input type="checkbox"   (click)="checkType2()"/> הכל
+        <!-- <div class="pz">  <label> פיצה </label> </div>
+        <div class="ps">  <p> דגים </p> </div>
+        <div class="all">  <p> הכל </p> </div> -->
+        
+   </div>
+
+</div>
+</div>
+

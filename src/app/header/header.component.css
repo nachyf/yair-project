@@ -1,0 +1,14 @@
+#id1{
+
+  width: 100%;
+  height: 145px;
+background-image: url(https://www.picshare.co.il/m_pictures/img62187.jpg);
+background-size: contain;
+background-repeat: repeat-x;
+
+
+}li {
+  direction: rtl;
+    
+    font-size:25px;
+}

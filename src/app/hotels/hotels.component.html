@@ -1,0 +1,27 @@
+
+<div class="container-fluid" >
+  <div class="row"> 
+
+
+
+<div  *ngFor="let h of hotels">
+
+  <!-- <div id="div1"><a > {{h}}</a><span>{{price | currency: 'ILS'}}</span></div> -->
+
+
+<div class="col-md-4">
+<div class="thumbnail">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Hotel-room-renaissance-columbus-ohio.jpg/250px-Hotel-room-renaissance-columbus-ohio.jpg" >
+<div class="caption">
+<h4>{{h}} </h4>
+<p>{{price | currency: 'ILS'}}</p>
+<a href="#" class="btn btn-primary" role="button">Button</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+ 
