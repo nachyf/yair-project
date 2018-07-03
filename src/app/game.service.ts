@@ -7,27 +7,27 @@ providedIn: 'root'
 })
 export class GameService {
 
-  uri: String = 'http://localhost:4000/games';
+  uri: String = 'http://localhost:5500/games';
 
   constructor(private http: HttpClient) { }
 
-  addGame(name,price,people) {
+  addGame(name, price, people) {
     const obj = {
     name: name,
     price: price,
-    people:people
+    people: people
     };
     this
       .http
       .post(`${this.uri}/add`, obj)
-      .subscribe(res => 
+      .subscribe(res =>
         console.log('Done')
       );
   }
 
-  
-  
 
 
-  
+
+
+
 }
