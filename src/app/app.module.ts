@@ -31,7 +31,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { CreateComponent } from './create/create.component';
 import { HttpClientModule } from '@angular/common/http';
-import { GameService } from './game.service';
+import { GameService } from './Yair.service';
 
 
 // export const firebaseConfig  = {

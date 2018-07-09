@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // Define collection and schema for Games
-let Game = new Schema({
+let Yair = new Schema({
   name: {
     type: String
   },
@@ -13,7 +13,7 @@ let Game = new Schema({
       type:Number
   },
 },{
-    collection: 'games'
+    collection: 'Yair'
 });
 
-module.exports = mongoose.model('Game', Game);
+module.exports = mongoose.model('Yair', Yair);

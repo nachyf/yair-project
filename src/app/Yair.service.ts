@@ -7,7 +7,7 @@ providedIn: 'root'
 })
 export class GameService {
 
-  uri: String = 'http://localhost:5500/games';
+  uri: String = 'http://localhost:5500/Yair';
 
   constructor(private http: HttpClient) { }
 

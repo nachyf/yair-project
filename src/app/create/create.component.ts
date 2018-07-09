@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
-import { GameService } from '../game.service';
+import { GameService } from '../Yair.service';
 
 @Component({
   selector: 'app-create',
@@ -9,7 +9,7 @@ import { GameService } from '../game.service';
 })
 export class CreateComponent implements OnInit {
 
- 
+
   angForm: FormGroup;
 
   constructor(private gameservice: GameService, private fb: FormBuilder) {
@@ -24,8 +24,8 @@ export class CreateComponent implements OnInit {
    });
   }
 
-  addGame(name, phone,people) {
-      this.gameservice.addGame(name, phone,people);
+  addGame(name, phone, people) {
+      this.gameservice.addGame(name, phone, people);
   }
 
   ngOnInit() {

@@ -1,6 +1,6 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { GameService } from './game.service';
+import { GameService } from './Yair.service';
 
 describe('GameService', () => {
   beforeEach(() => {

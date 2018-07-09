@@ -2,14 +2,14 @@
 
 const express = require('express');
 const app = express();
-const gameRoutes = express.Router();
+const YairRoutes = express.Router();
 
 // Require Game model in our routes module
-let Game = require('../models/Game');
+let Yair = require('../models/Yair');
 
 // Defined store route
-gameRoutes.route('/add').post(function (req, res) {
-  let game = new Game(req.body);
+YairRoutes.route('/add').post(function (req, res) {
+  let game = new Yair(req.body);
    game.save()
     .then(game => {
     res.status(200).json({'game': 'CoGamein added successfully'});
@@ -20,13 +20,13 @@ gameRoutes.route('/add').post(function (req, res) {
 });
 
 // Defined get data(index or listing) route
-gameRoutes.route('/').get(function (req, res) {
-   Game.find(function (err, games){
+YairRoutes.route('/').get(function (req, res) {
+  Yair.find(function (err, Yair){
     if(err){
       console.log(err);
     }
     else {
-      res.json(games);
+      res.json(Yair);
     }
   });
 });
@@ -35,4 +35,4 @@ gameRoutes.route('/').get(function (req, res) {
 
 
 
-module.exports = gameRoutes;
+module.exports = YairRoutes;

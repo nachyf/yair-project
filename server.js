@@ -7,7 +7,7 @@ const express = require('express'),
 	const DB =
 	'mongodb://localhost:27017/yair';
 
-const gameRoutes = require('./routes/game.route');
+const YairRoutes = require('./routes/Yair.route');
 
 	mongoose.Promise = global.Promise;
 	mongoose.connect(DB).then(
@@ -18,7 +18,7 @@ const gameRoutes = require('./routes/game.route');
 const app = express();
 	app.use(bodyParser.json());
 	app.use(cors());
-	app.use('/games', gameRoutes);
+	app.use('/Yair', YairRoutes);
 
 const port = process.env.PORT || 5500;
 
